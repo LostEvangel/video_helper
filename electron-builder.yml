@@ -1,0 +1,41 @@
+appId: local.videohelper.desktop
+productName: VideoHelper
+directories:
+  output: release
+asar: true
+electronDist: node_modules/electron/dist
+files:
+  - dist/**/*
+  - package.json
+  - '!dist/**/*.map'
+extraResources:
+  - from: vendor/ffmpeg
+    to: bin
+    filter:
+      - ffmpeg.exe
+      - ffprobe.exe
+      - LICENSE
+      - README.txt
+      - README.md
+      - source.json
+  - from: native/thumbnail/dist
+    to: thumbnail
+    filter:
+      - '**/*'
+      - '!**/*.pdb'
+  - from: .tools/media-publish
+    to: media-publish
+    filter:
+      - no-replace-move.exe
+win:
+  artifactName: VideoHelper-Setup.exe
+  target:
+    - target: nsis
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Video Helper

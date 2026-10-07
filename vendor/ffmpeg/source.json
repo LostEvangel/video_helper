@@ -1,0 +1,25 @@
+{
+  "publisher": "Gyan.dev",
+  "version": "8.1.2-essentials_build-www.gyan.dev",
+  "architecture": "Windows x64",
+  "license": "GPL-3.0",
+  "sourceArchive": {
+    "file": "ffmpeg-essentials.zip",
+    "sha256": "db580001caa24ac104c8cb856cd113a87b0a443f7bdf47d8c12b1d740584a2ec"
+  },
+  "upstreamFfmpeg": {
+    "version": "8.1.2",
+    "commit": "38b88335f9",
+    "url": "https://github.com/FFmpeg/FFmpeg/commit/38b88335f9"
+  },
+  "executables": {
+    "ffmpeg.exe": {
+      "bytes": 101897728,
+      "sha256": "1326dde4c84ff1f96fe6b8916c5bed29e163e9b5dccf995f6f3db069d143ec5e"
+    },
+    "ffprobe.exe": {
+      "bytes": 101692928,
+      "sha256": "b49ccc7c6547b141ad5a2f6ec69cc04323d7133d7704d70b331b904c63eecb07"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+#EXTM3U
+#EXT-X-TARGETDURATION:3
+#EXTINF:2.5,
+segments/one.ts?sig=keep
+#EXT-X-ENDLIST

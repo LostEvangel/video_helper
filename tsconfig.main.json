@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": "src",
+    "outDir": "dist",
+    "noEmit": false,
+    "types": ["node"],
+    "sourceMap": true
+  },
+  "include": ["src/main/**/*.ts", "src/shared/contracts.ts"],
+  "exclude": ["src/renderer"]
+}

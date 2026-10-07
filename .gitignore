@@ -1,0 +1,12 @@
+node_modules/
+/dist/
+.tools/
+*.log
+release/
+.superpowers/
+tests/generated/
+native/thumbnail/build/
+vendor/ffmpeg/*.exe
+.env
+.env.*
+!.env.example
